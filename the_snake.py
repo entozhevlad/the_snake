@@ -1,4 +1,4 @@
-from random import choice, randint
+from random import randint
 import pygame
 
 # Константы для размеров поля и сетки:
@@ -43,6 +43,7 @@ class GameObject:
 
 class Apple(GameObject):
     def __init__(self):
+        """Конструктор яблока."""
         self.body_color = APPLE_COLOR
         self.randomize_position()
 
